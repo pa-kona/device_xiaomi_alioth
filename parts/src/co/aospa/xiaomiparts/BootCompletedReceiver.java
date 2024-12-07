@@ -26,9 +26,7 @@ import android.util.Log;
 import android.view.Display;
 import android.view.Display.HdrCapabilities;
 
-import co.aospa.xiaomiparts.display.ColorService;
 import co.aospa.xiaomiparts.thermal.ThermalUtils;
-import co.aospa.xiaomiparts.touch.HighTouchPollingService;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -42,8 +40,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         }
 
         Log.i(TAG, "Boot completed, starting services");
-        ColorService.startService(context);
-        HighTouchPollingService.startService(context);
         ThermalUtils.startService(context);
         overrideHdrTypes(context);
     }

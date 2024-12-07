@@ -47,15 +47,5 @@
             android:permission="ThermalService">
         </service>
 
-        <service
-            android:name=".display.ColorService"
-            android:permission="ColorService">
-        </service>
-
-        <service
-            android:name=".touch.HighTouchPollingService"
-            android:permission="HighTouchPollingService">
-        </service>
-
     </application>
 </manifest>
